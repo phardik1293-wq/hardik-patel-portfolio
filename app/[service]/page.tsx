@@ -5,7 +5,7 @@ import {PageHead,Section,Card,JsonLd,Btn} from "@/components/ui";
 import {generateMetadata as gm,generateBreadcrumbSchema} from "@/lib/seo";
 export const dynamicParams=false;
 export const generateStaticParams=()=>services.map(s=>({service:s.slug}));
-export function generateMetadata({params}:{params:{service:string}}){const s=services.find(x=>x.slug===params.service);return s?gm(s.title,s.desc,`/${s.slug}/`):{}}
+export function generateMetadata({params}:{params:{service:string}}){const s=services.find(x=>x.slug===params.service);return s?gm(s.seoTitle,s.desc,`/${s.slug}/`):{}}
 export default function Page({params}:{params:{service:string}}){
  const s=services.find(x=>x.slug===params.service);if(!s)notFound();
  return <><JsonLd data={generateBreadcrumbSchema([[s.title,`/${s.slug}/`]])}/>

@@ -22,4 +22,3 @@ Import the repo, add the env vars above, deploy. Then submit `/sitemap.xml` in G
 - FAQPage schema is intentionally omitted (Google limits FAQ rich results); FAQ is visible content only.
 - Contact rate limiting is per-instance in memory; use Redis/Upstash for stricter production limits.
 - No ranking or AI-inclusion is guaranteed.
-"# hardik-patel-portfolio" 

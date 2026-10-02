@@ -1,0 +1,3 @@
+const items=["WordPress","Shopify","WooCommerce","PHP","Shopify Liquid","JavaScript","HTML5","CSS3","Elementor","MySQL","GA4","Google Tag Manager","Search Console","Technical SEO","Schema Markup","Email Marketing"];
+const L=({hide}:{hide?:boolean})=><ul aria-hidden={hide?true:undefined} className="flex gap-10 pr-10 text-sm uppercase tracking-[.2em] text-muted">{items.map(t=><li key={t} className="whitespace-nowrap">{t}</li>)}</ul>;
+export default function Marquee(){return <div className="marquee mb-10 overflow-hidden border-y border-line py-4"><div className="track flex w-max"><L/><L hide/></div></div>}
