@@ -1,0 +1,6 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+html{scroll-behavior:smooth}body{@apply bg-bg text-fg antialiased overflow-x-hidden}
+:focus-visible{outline:2px solid #C8FF3D;outline-offset:3px;border-radius:4px}
+.rise{animation:rise .7s ease both}.rise2{animation:rise .7s .12s ease both}.rise3{animation:rise .7s .24s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
